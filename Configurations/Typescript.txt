@@ -1,0 +1,16 @@
+Typescript is installed in this templated!
+
+To use it you have to change the different files to .ts or .tsx
+The tsconfig.json will automatically be generated when you start
+the server.
+
+Incase Typescript did not install correctly use:
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+Or:
+
+npm install --save typescript
+npm install --save @types/node
+npm install --save@types/react
+npm install --save@types/react-dom
+npm install --save@types/jest

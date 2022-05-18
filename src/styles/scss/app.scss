@@ -1,0 +1,63 @@
+.page-layout{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 10rem;
+}
+
+.logo{
+    width: 15%;
+    height: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    max-width: 80rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 4rem;
+}
+
+.icon{
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__text{
+        color: white;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+}
+
+.github{
+    border-radius: 50%;
+    background-color: #000;
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    z-index: 99;
+
+    &:hover + .icon__text{
+        opacity: 1;
+    }
+}

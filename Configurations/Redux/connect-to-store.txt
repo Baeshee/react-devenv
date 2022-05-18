@@ -1,0 +1,26 @@
+To connect a component to the store as a listener you have to
+create a mapStateToProps function to get import the global state
+to the props within the component.
+
+Here you define the name you want to give the prop and return the
+reducer from the state.
+
+Eventually you import Connect:
+// import { connect } from "react-redux";
+
+Here you add mapStateToProps and if you want to perform an action
+you can define it here with the actionName and followed by the
+name you want to give the action inside the component. 
+
+!! Don't forget to import the actions !!
+
+!! You use this to address the action inside the component !!
+
+
+// const mapStateToProps = (state) => {
+//     return {
+//         variable: state.reducer_name
+//     }
+// }
+
+// export default connect(mapStateToProps, {actionName: name_you_want_to_give_to_action})(componentName);
